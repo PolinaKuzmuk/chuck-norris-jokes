@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body class="body">
+    <div class="container">
+        <div class="menu">
+            <button class="favourite-menu-btn" type="button"></button>
+            <h2 class="favourite-title">Favourite</h2>
+        </div>
+        <div class="main">
+            <h1 class="title">Hey!</h1>
+            <p class="subtitle">Let’s try to find a joke for you:</p>
+            <form class="form">
+                <label>
+                    <input class="joke" type="radio" name="joke" id="random" value="random">Random
+                </label><br>
+                <label>
+                    <input class="joke" type="radio" name="joke" id="category" value="category">From caterogies
+                </label><br>
+                <div class="category-container"></div>
+                <label>
+                    <input class="joke" type="radio" name="joke" id="search" value="search">Search
+                </label><br>
+                <input class="search-input" type="text" placeholder="Free text search...">
+                <button class="submit-joke" type="submit">Get a joke</button>
+            </form>
+            <div class="joke-list"></div>
+        </div>
+        <div class="favourite">
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>
